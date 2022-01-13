@@ -1,88 +1,106 @@
-This package was first debianized by Paolo Molaro <lupus@debian.org> on
-Wed, 17 Nov 1999 17:30:23 +0100.
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: heartbeat
+Source: http://linux-ha.org/wiki/Download
 
-The original sources can be found at:
-	http://linux-ha.org/wiki/Download
+Files: *
+Copyright: 1998-2010 Alan Robertson <alanr@unix.sh>
+           1998-2010 Andreas Mock <andreas.mock@web.de>
+           1998-2010 Andrew Beekhof <andrew@beekhof.net>
+           1998-2010 Dave Blaschke <debltc@us.ibm.com>
+           1998-2010 David Lee <t.d.lee@durham.ac.uk>
+           1998-2010 Dejan Muhamedagic <dejan@hello-penguin.com>
+           1998-2010 Hannes Eder <heder@google.com>
+           1998-2010 Huang Zhen <zhenhltc@cn.ibm.com>
+           1998-2010 Junko Ikeda <ikedaj@intellilink.co.jp>
+           1998-2010 Lars Marowsky-Bree <lmb@suse.de>
+           1998-2010 Martin Bene <martin.bene@icomedias.com>
+           1998-2010 Phil Carns <carns@mcs.anl.gov>
+           1998-2010 Satomi Taniguchi <taniguchis@intellilink.co.jp>
+           1998-2010 Sean Reifschneider <jafo@tummy.com>
+           1998-2010 Sebastian Reitenbach <itlistuser@rapideye.de>
+           1998-2010 Serge Dubrouski <sergeyfd@gmail.com>
+           1998-2010 Simon Horman <horms@verge.net.au>
+           1998-2010 Xinwei Hu <hxinwei@gmail.com>
+                     Tom Vogt <tom@lemuria.org>	(udp code)
+                     yuri volobuev <volobuev@t1.chem.umn.edu> (send_arp.c)
+                     Russell Kroll <rkroll@exploits.org> (APCSmart support)
+                     David C. Teigland <teigland@sistina.com> (GFS stonith)
+                     salz@pebbles.bbn.com (scandir)
+                     Internet Software Consortium (inet_pton)
+License: GPL-2+
 
-Upstream Authors (from AUTHORS) and copyright holders: (c) 1998-2010
+Files: replace/*
+       include/*
+       heartbeat/hb_rexmit.c
+       resources/heartbeat/LVM.in
+       membership/ccm/ccmlib_eventapi.c
+       membership/ccm/ccmlib.h
+       membership/ccm/ccmlib_memapi.c
+       membership/ccm/ccmlib_clm.c
+       lib/lrm/lrm_msg.c
+       lib/lrm/clientlib.c
+       lib/cmsclient/cmsclient.h
+       lib/cmsclient/cmslib_client.h
+       lib/cmsclient/cmslib_client.c
+       lib/plugins/*
+       lib/apphb/apphb.c
+       lib/hbclient/client_lib.c
+Copyright: 1998-2010 Alan Robertson <alanr@unix.sh>
+           1998-2010 Andreas Mock <andreas.mock@web.de>
+           1998-2010 Andrew Beekhof <andrew@beekhof.net>
+           1998-2010 Dave Blaschke <debltc@us.ibm.com>
+           1998-2010 David Lee <t.d.lee@durham.ac.uk>
+           1998-2010 Dejan Muhamedagic <dejan@hello-penguin.com>
+           1998-2010 Hannes Eder <heder@google.com>
+           1998-2010 Huang Zhen <zhenhltc@cn.ibm.com>
+           1998-2010 Junko Ikeda <ikedaj@intellilink.co.jp>
+           1998-2010 Lars Marowsky-Bree <lmb@suse.de>
+           1998-2010 Martin Bene <martin.bene@icomedias.com>
+           1998-2010 Phil Carns <carns@mcs.anl.gov>
+           1998-2010 Satomi Taniguchi <taniguchis@intellilink.co.jp>
+           1998-2010 Sean Reifschneider <jafo@tummy.com>
+           1998-2010 Sebastian Reitenbach <itlistuser@rapideye.de>
+           1998-2010 Serge Dubrouski <sergeyfd@gmail.com>
+           1998-2010 Simon Horman <horms@verge.net.au>
+           1998-2010 Xinwei Hu <hxinwei@gmail.com>
+                     Tom Vogt <tom@lemuria.org>	(udp code)
+                     yuri volobuev <volobuev@t1.chem.umn.edu> (send_arp.c)
+                     Russell Kroll <rkroll@exploits.org> (APCSmart support)
+                     David C. Teigland <teigland@sistina.com> (GFS stonith)
+                     salz@pebbles.bbn.com (scandir)
+                     Internet Software Consortium (inet_pton)
+License: LGPL-2.1
 
-	Alan Robertson <alanr@unix.sh>
-	Andreas Mock <andreas.mock@web.de>
-	Andrew Beekhof <andrew@beekhof.net>
-	Dave Blaschke <debltc@us.ibm.com>
-	David Lee <t.d.lee@durham.ac.uk>
-	Dejan Muhamedagic <dejan@hello-penguin.com>
-	Hannes Eder <heder@google.com>
-	Huang Zhen <zhenhltc@cn.ibm.com>
-	Junko Ikeda <ikedaj@intellilink.co.jp>
-	Lars Marowsky-Bree <lmb@suse.de>
-	Martin Bene <martin.bene@icomedias.com>
-	Phil Carns <carns@mcs.anl.gov>
-	Satomi Taniguchi <taniguchis@intellilink.co.jp>
-	Sean Reifschneider <jafo@tummy.com>
-	Sebastian Reitenbach <itlistuser@rapideye.de>
-	Serge Dubrouski <sergeyfd@gmail.com>
-	Simon Horman <horms@verge.net.au>
-	Xinwei Hu <hxinwei@gmail.com>
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <https://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
 
-Code for the following pieces borrowed from code by:
-	Tom Vogt <tom@lemuria.org>	(udp code)
-	yuri volobuev <volobuev@t1.chem.umn.edu> (send_arp.c)
-	'Network UPS Tools' by Russell Kroll <rkroll@exploits.org>
- 		homepage: http://www.exploits.org/nut/
-		(Andreas Piesk borrowed code for APCSmart support)
-	David C. Teigland <teigland@sistina.com>
-		wrote original meatware support for GFS stomith
-	salz@pebbles.bbn.com - replacement scandir function
-	Internet Software Consortium (bind) - replacement inet_pton()
-		function
-
-NOTE:	The work of everyone on this project is dearly appreciated. If you
-	are not listed here but should be, please notify us!
-
---------------------
-
-All binaries provided by this package are GNU GPL or GNU LGPL.
-All source files without a specific licence statement are
-available licenced under the GNU GPL.
-
---------------------
-
-   This package is free software; you can redistribute it and/or modify
-   it under the terms of the GNU General Public License as published by
-   the Free Software Foundation; either version 2 of the License, or
-   (at your option) any later version.
-
-   This package is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-   GNU General Public License for more details.
-
-   You should have received a copy of the GNU General Public License
-   along with this package; if not, write to the Free Software
-   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
-
-On Debian systems, the complete text of the GNU General
-Public License can be found in `/usr/share/common-licenses/GPL-2'.
-
---------------------
-
-   This library is free software; you can redistribute it and/or
-   modify it under the terms of the GNU Library General Public
-   License as published by the Free Software Foundation; either
-   version 2 of the License, or (at your option) any later version.
-  
-   This library is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-   Library General Public License for more details.
-  
-   You should have received a copy of the GNU Library General Public
-   License along with this library; if not, write to the
-   Free Software Foundation, Inc., 51 Franklin St, Fifth Floor,
-   Boston, MA 02110-1301, USA.
-
-On Debian systems, the complete text of the GNU Lesser General
-Public License can be found in `/usr/share/common-licenses/LGPL-2.1'.
-
-
+License: LGPL-2.1
+ This package is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see <https://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU Lesser General
+ Public License can be found in "/usr/share/common-licenses/LGPL-2.1".
